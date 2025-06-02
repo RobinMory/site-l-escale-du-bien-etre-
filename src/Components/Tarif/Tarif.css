@@ -1,0 +1,54 @@
+/* Conteneur principal */
+.tarif-container {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column; /* Place les éléments en colonne */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  gap: 20px; /* Espacement entre les blocs */
+}
+
+.tarif-image {
+    display: block;        /* Assure que l'image est un élément de type bloc */
+    width: 100%;           /* L'image prend toute la largeur disponible */
+    max-width: 1200px;     /* Limite la largeur maximale de l'image */
+    height: auto;          /* Maintient le ratio de l'image */
+    margin: 0 auto;        /* Centre l'image horizontalement */
+    border: none;          /* Retire toute bordure autour de l'image */
+    margin: 20px auto 0;   /* Marge en haut de 20px, centré horizontalement */
+  }
+
+  /* Cadre contenant le titre et le texte */
+.info-tarif-box {
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px #036caa;
+  padding: 20px;
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Style du titre */
+.info-tarif-title {
+font-size: 24px;
+font-weight: 700;
+color: #1568eb;
+margin-bottom: 10px;
+}
+  
+  @media (max-width: 900px) { /* Ajuste cette valeur selon tes besoins */
+    .tarif-image {
+      margin-top: 50px; /* Augmente l'espace sous la navbar */
+    }
+
+    .info-tarif-title {
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: 10px;
+      }
+  }
+  

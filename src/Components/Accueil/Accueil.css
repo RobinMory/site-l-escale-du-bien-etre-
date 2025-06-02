@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Section des photos côte à côte */
+.accueil-container{
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.photo-section {
+  display: flex;
+  justify-content: center; /* Centrer les photos dans la page */
+  align-items: center;
+  padding: 25px;
+}
+
+.photo-wrapper {
+  display: flex;
+  gap: 20px; /* Espace entre les deux images */
+}
+
+.photo-wrapper .photo {
+  width: 48%; /* Chaque image prend environ la moitié de l'espace */
+  height: auto; /* Garder les proportions */
+  border-radius: 8px; /* Coins arrondis pour un design moderne */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  object-fit: cover; /* Ajuster les images à leur conteneur */
+}
+
+.centered-text {
+  display: flex;
+  flex-direction: column; /* Empile les éléments verticalement */
+  justify-content: center; /* Centre verticalement */
+  align-items: center; /* Centre horizontalement */
+  text-align: center; /* Aligne le texte au centre */
+  width: 100%; /* Occupe tout l'espace disponible */
+  background-color: #ffffff; /* Facultatif : ajoute un fond blanc */
+  padding: 15px; /* Facultatif : ajoute de l'espace autour du texte */
+  box-shadow: 0 1px 10px #e80e98;
+  border-radius: 8px; /* Facultatif : coins arrondis */
+  font-size: 14px;
+}
+
+.title-centered-text{
+  color: #e80e98;
+}
+
+@media (max-width: 999px) {
+  .accueil-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* La section avec le texte doit passer en premier */
+  .photo-section:nth-child(2) {
+    order: -1;
+  }
+
+  .photo-section {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .photo-wrapper {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    display: flex;
+  }
+
+  .centered-text {
+
+    width: 90%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .photo-wrapper .photo {
+    width: 90%;
+  }
+}
+
+
+
+/* Pour les écrans entre 1000px et 1100px */
+@media (max-width: 1400px) and (min-width: 1000px) {
+  .photo-wrapper {
+    display: flex;
+    flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne */
+    justify-content: space-between; /* Assure une bonne répartition */
+    align-items: center; /* Centre verticalement */
+  }
+
+  .centered-text {
+    width: 50%; /* Ajuster la taille du texte pour éviter qu'il soit trop grand */
+    max-width: 450px; /* Limite la largeur pour ne pas écraser les images */
+    font-size: 14px;
+  }
+
+  .photo-wrapper .photo {
+    width: 45%; /* Ajuste la taille des images */
+    max-width: 280px; /* Empêche les images de devenir trop grandes */
+  }
+}
+
+

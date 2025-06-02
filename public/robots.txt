@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lescaledubienetre.netlify.app/sitemap.xml

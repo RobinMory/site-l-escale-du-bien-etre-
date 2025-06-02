@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Section globale */
+.accueil-container {
+  margin-top: 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Section des photos */
+.photo-section {
+  display: flex;
+  justify-content: center; /* Centrer les photos */
+  align-items: center;
+  padding: 25px;
+}
+
+/* Encadré autour de chaque photo */
+.photo-card {
+  background-color: #ffffff; /* Fond blanc */
+  border: 2px solid #e0e0e0; /* Bordure grise claire */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 1px 10px #e80e98;
+  padding: 15px; /* Espace interne */
+  text-align: center; /* Centrer le texte */
+  display: inline-block; /* S'ajuste à la taille du contenu */
+}
+
+/* Image dans l'encadré */
+.photo {
+  max-width: 100%; /* Empêche l'image de dépasser la taille de l'encadré */
+  height: auto; /* Respecter les proportions */
+  border-radius: 8px; /* Coins arrondis pour l'image */
+  object-fit: contain; /* Ne coupe pas l'image */
+  display: block; /* Assure un bon positionnement */
+}
+
+.photo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adresse {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+  background-color: #f8f8f8; /* Fond léger */
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+

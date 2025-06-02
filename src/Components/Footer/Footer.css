@@ -1,0 +1,98 @@
+/* Footer.css */
+
+/* Conteneur principal */
+.footer {
+    background-color: #1a1a1a; /* Couleur de fond sombre */
+    color: #ffffff; /* Texte blanc */
+    font-family: 'Arial', sans-serif;
+
+}
+
+/* Section principale */
+.sb_footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section_padding {
+    padding: 20px 10px;
+}
+
+/* Liens de footer */
+.sb_footer-links {
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.sb_footer-links-div {
+    flex: 1;
+    margin: 0 10px;
+    min-width: 200px;
+    text-align: center;
+}
+
+
+.sb_footer-links-div h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.sb_footer-links-div a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 14px;
+}
+
+.sb_footer-links-div a:hover {
+    color: #ffd700; /* Couleur dorée au survol */
+}
+
+/* Ligne de séparation */
+hr {
+    border: 0;
+    height: 1px;
+    background: #444;
+    margin: 20px 0;
+}
+
+/* Section inférieure */
+.sb_footer_below {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sb_footer-copyright {
+    font-size: 14px;
+    color: #999;
+}
+
+.sb_footer-below-links {
+    display: flex;
+    gap: 15px;
+}
+
+.sb_footer-below-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.sb_footer-below-links a:hover {
+    color: #ffd700;
+}
+
+.disabled-link {
+    pointer-events: none;
+    color: gray; /* Change la couleur pour montrer que c'est inactif */
+    text-decoration: none; /* Supprime le soulignement */
+  }
+  

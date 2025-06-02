@@ -1,0 +1,76 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Conteneur principal */
+.info-container {
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column; /* Place les éléments en colonne */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    gap: 20px; /* Espacement entre les blocs */
+  }
+
+/* Cadre contenant le titre et le texte */
+.info-box {
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px #e80e98;
+    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+  }
+
+/* Style du titre */
+.info-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #e80e98;
+  margin-bottom: 10px;
+}
+
+.info-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 15px;
+  }
+
+/* Style du texte */
+.info-text {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.main-title {
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  background-color: #f8f8f8; /* Fond léger */
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+
+.category-subtitle {
+  font-size: 25px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+  background-color: #f8f8f8; /* Fond léger */
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px; 
+}

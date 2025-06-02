@@ -1,0 +1,69 @@
+.partenaire-container {
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+  overflow: auto;
+}
+
+/* Section des photos */
+.partenaire-photo-section {
+  display: flex;
+  justify-content: center; /* Centrer les photos */
+  align-items: center;
+  padding: 25px;
+  gap: 10px; /* Espace entre les colonnes */
+}
+
+/* Encadré autour de chaque photo */
+.partenaire-photo-card {
+  background-color: #ffffff; /* Fond blanc */
+  border: 2px solid #e0e0e0; /* Bordure grise claire */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 1px 10px #e80e98;
+  padding: 20px; /* Espace interne */
+  text-align: center; /* Centrer le texte */
+  display: inline-block; /* S'ajuste à la taille du contenu */
+  height: 660px;
+  width: 700px;
+
+}
+
+/* Image dans l'encadré */
+.partenaire-photo {
+  max-width: 100%; /* Empêche l'image de dépasser la taille de l'encadré */
+  height: auto; /* Respecter les proportions */
+  border-radius: 8px; /* Coins arrondis pour l'image */
+  object-fit: contain; /* Ne coupe pas l'image */
+  display: block; /* Assure un bon positionnement */
+}
+
+/* Texte sous la photo */
+.partenaire-photo-description {
+  margin-top: 10px; /* Espace entre la photo et le texte */
+  font-size: 14px; /* Taille de police */
+  color: #333333; /* Texte sombre */
+  word-wrap: break-word; 
+  min-height: 50px; 
+} 
+
+@media (max-width: 900px) {
+  .partenaire-photo-section {
+    flex-direction: column; /* Met chaque carte l'une en dessous de l'autre */
+    align-items: center; /* Centre les éléments */
+    gap: 20px; /* Augmente l'espace entre les cartes */
+  }
+
+  .partenaire-photo-card {
+    width: 90%; /* Réduit la largeur pour s'adapter aux petits écrans */
+    height: auto; /* Ajuste la hauteur automatiquement */
+    padding: 15px; /* Réduit l'espace interne pour éviter un rendu trop grand */
+  }
+
+  .partenaire-photo {
+    max-width: 100%; /* Assure que l'image ne dépasse pas */
+    height: auto; /* Conserve les proportions */
+  }
+
+  .partenaire-photo-description {
+    font-size: 12px; /* Réduit légèrement la taille du texte pour éviter qu'il prenne trop de place */
+  }
+}

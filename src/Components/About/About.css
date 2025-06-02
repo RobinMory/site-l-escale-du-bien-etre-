@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Conteneur principal */
+.about-container {
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  /* Section contenant la photo et le texte */
+  .about-photo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Carte contenant l'image et le texte */
+  .about-photo-card {
+    display: flex;
+    flex-direction: row; /* Photo à gauche, texte à droite */
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px #e80e98;
+    padding: 20px;
+    max-width: 1400px; /* Élargir le conteneur */
+    width: 95%; /* Utiliser presque toute la largeur de l’écran */
+    min-height: 450px; /* Légèrement plus grand */
+  }
+  
+  /* Ajustement de la photo */
+  .about-photo {
+    flex: 1;
+    max-width: 600px; /* Augmenter la taille max */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Ajustement du texte */
+  .about-text-container {
+    flex: 1.5; /* Le texte prend plus d’espace que l’image */
+    margin-left: 50px; /* Augmenter l’espace entre la photo et le texte */
+    font-size: 18px; /* Légèrement plus grand pour un meilleur confort de lecture */
+    color: #333333;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 1100px) {
+    .about-photo-card {
+      flex-direction: column; /* Met la photo au-dessus du texte */
+      text-align: center; /* Centre le texte */
+      padding: 15px; /* Réduit l'espace interne */
+    }
+  
+    .about-photo {
+      max-width: 100%; /* La photo prend toute la largeur du conteneur */
+    }
+  
+    .about-text-container {
+      margin-left: 0; /* Supprime la marge gauche */
+      margin-top: 15px; /* Ajoute un petit espace entre l’image et le texte */
+      font-size: 14px; /* Réduit légèrement la taille du texte */
+      width: 90%; /* Réduit la largeur du texte */
+    }
+  }
+  
