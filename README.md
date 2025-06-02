@@ -1,8 +1,22 @@
-# React + Vite
+📌 Nom du projet : Site vitrine – L'Escale du bien-être
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎯 Objectif : Créer un visibilité sur Internet pour une indépendante dans l'esthétique
 
-Currently, two official plugins are available:
+🧰 Technologies utilisées :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+HTML / CSS / JavaScript
+Hébergement Netlify
+⚙️ Fonctionnalités :
+
+Page d’accueil, prestations, contact
+Responsive (mobile/tablette)
+Optimisation légère SEO (titre, description, sitemap)
+📈 Résultat :
+
+Référencé dans Google
+Cliente satisfaite, témoigne que des clients lui ont parlé du site
+🧠 Ce que j’ai appris :
+
+Intégration responsive rapide
+Optimisation pour Search Console
+Communication client (cadrage des besoins)
